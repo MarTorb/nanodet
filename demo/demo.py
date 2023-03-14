@@ -118,9 +118,9 @@ def main():
                 mkdir(local_rank, save_folder)
                 save_file_name = os.path.join(save_folder, os.path.basename(image_name))
                 cv2.imwrite(save_file_name, result_image)
-            ch = cv2.waitKey(0)
-            if ch == 27 or ch == ord("q") or ch == ord("Q"):
-                break
+            #ch = cv2.waitKey(0)
+            #if ch == 27 or ch == ord("q") or ch == ord("Q"):
+            #       break
     elif args.demo == "video" or args.demo == "webcam":
         cap = cv2.VideoCapture(args.path if args.demo == "video" else args.camid)
         width = cap.get(cv2.CAP_PROP_FRAME_WIDTH)  # float
