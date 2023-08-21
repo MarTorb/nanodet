@@ -1,14 +1,10 @@
 #!/bin/bash
 #SBATCH --job-name="prosjektoppgave-nanodet"
 #SBATCH --account=ie-idi
-#SBATCH --time=72:00:00
-#SBATCH --nodes=1
-#SBATCH -c 28
+#SBATCH --time=07-00:00:00
 #SBATCH --partition=GPUQ
-#SBATCH --gres=gpu:1
-#SBATCH --mem=30000
-#SBATCH --constraint=A100
-
+#SBATCH --gres=gpu:A100m80:1
+#SBATCH --mem=100G
 
 source ~/.bashrc
 

@@ -126,3 +126,6 @@ tile/
 /all_images_tile
 /old_workspace
 *.ckpt
+/all_images_tiled
+/workspace
+/all_images_tiled608

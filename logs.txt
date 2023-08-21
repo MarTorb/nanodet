@@ -1,1 +1,11 @@
+INFO:root:Skip loading parameter head.gfl_cls.0.weight, required shapetorch.Size([33, 128, 1, 1]), loaded shapetorch.Size([34, 128, 1, 1]).
+INFO:root:Skip loading parameter head.gfl_cls.0.bias, required shapetorch.Size([33]), loaded shapetorch.Size([34]).
+INFO:root:Skip loading parameter head.gfl_cls.1.weight, required shapetorch.Size([33, 128, 1, 1]), loaded shapetorch.Size([34, 128, 1, 1]).
+INFO:root:Skip loading parameter head.gfl_cls.1.bias, required shapetorch.Size([33]), loaded shapetorch.Size([34]).
+INFO:root:Skip loading parameter head.gfl_cls.2.weight, required shapetorch.Size([33, 128, 1, 1]), loaded shapetorch.Size([34, 128, 1, 1]).
+INFO:root:Skip loading parameter head.gfl_cls.2.bias, required shapetorch.Size([33]), loaded shapetorch.Size([34]).
+INFO:root:Skip loading parameter head.gfl_cls.3.weight, required shapetorch.Size([33, 128, 1, 1]), loaded shapetorch.Size([34, 128, 1, 1]).
+INFO:root:Skip loading parameter head.gfl_cls.3.bias, required shapetorch.Size([33]), loaded shapetorch.Size([34]).
+INFO:root:Skip loading parameter aux_head.gfl_cls.weight, required shapetorch.Size([1, 256, 3, 3]), loaded shapetorch.Size([2, 256, 3, 3]).
+INFO:root:Skip loading parameter aux_head.gfl_cls.bias, required shapetorch.Size([1]), loaded shapetorch.Size([2]).
 INFO:root:Press "Esc", "q" or "Q" to exit.

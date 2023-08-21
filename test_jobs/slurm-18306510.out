@@ -1,0 +1,49 @@
+all_images_2560
+[NanoDet][05-15 17:53:54]INFO:Setting up data...
+[NanoDet][05-15 17:53:54]INFO:Creating model...
+loading annotations into memory...
+Done (t=0.02s)
+creating index...
+index created!
+model size is  1.5x
+init weights...
+Finish initialize NanoDet-Plus Head.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+[NanoDet][05-15 17:54:03]INFO:Starting testing...
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:236: PossibleUserWarning: The dataloader, test_dataloader 0, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 40 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+Testing: 0it [00:00, ?it/s][NanoDet][05-15 17:54:04]INFO:Loaded average state from checkpoint.
+Testing:   0%|          | 0/48 [00:00<?, ?it/s]Testing DataLoader 0:   0%|          | 0/48 [00:00<?, ?it/s]/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /opt/conda/conda-bld/pytorch_1666643003845/work/aten/src/ATen/native/TensorShape.cpp:3190.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Testing DataLoader 0:   2%|▏         | 1/48 [00:10<08:36, 11.00s/it]Testing DataLoader 0:   4%|▍         | 2/48 [00:11<04:20,  5.65s/it]Testing DataLoader 0:   6%|▋         | 3/48 [00:11<02:53,  3.86s/it]Testing DataLoader 0:   8%|▊         | 4/48 [00:14<02:44,  3.74s/it]Testing DataLoader 0:  10%|█         | 5/48 [00:17<02:34,  3.60s/it]Testing DataLoader 0:  12%|█▎        | 6/48 [00:20<02:26,  3.50s/it]Testing DataLoader 0:  15%|█▍        | 7/48 [00:24<02:21,  3.44s/it]Testing DataLoader 0:  17%|█▋        | 8/48 [00:27<02:16,  3.40s/it]Testing DataLoader 0:  19%|█▉        | 9/48 [00:30<02:11,  3.37s/it]Testing DataLoader 0:  21%|██        | 10/48 [00:33<02:06,  3.34s/it]Testing DataLoader 0:  23%|██▎       | 11/48 [00:36<02:02,  3.32s/it]Testing DataLoader 0:  25%|██▌       | 12/48 [00:39<01:58,  3.30s/it]Testing DataLoader 0:  27%|██▋       | 13/48 [00:42<01:55,  3.29s/it]Testing DataLoader 0:  29%|██▉       | 14/48 [00:45<01:51,  3.28s/it]Testing DataLoader 0:  31%|███▏      | 15/48 [00:49<01:47,  3.27s/it]Testing DataLoader 0:  33%|███▎      | 16/48 [00:52<01:44,  3.26s/it]Testing DataLoader 0:  35%|███▌      | 17/48 [00:55<01:40,  3.25s/it]Testing DataLoader 0:  38%|███▊      | 18/48 [00:58<01:37,  3.24s/it]Testing DataLoader 0:  40%|███▉      | 19/48 [01:01<01:33,  3.23s/it]Testing DataLoader 0:  42%|████▏     | 20/48 [01:04<01:30,  3.22s/it]Testing DataLoader 0:  44%|████▍     | 21/48 [01:07<01:26,  3.22s/it]Testing DataLoader 0:  46%|████▌     | 22/48 [01:10<01:23,  3.21s/it]Testing DataLoader 0:  48%|████▊     | 23/48 [01:13<01:20,  3.21s/it]Testing DataLoader 0:  50%|█████     | 24/48 [01:16<01:16,  3.20s/it]Testing DataLoader 0:  52%|█████▏    | 25/48 [01:19<01:13,  3.20s/it]Testing DataLoader 0:  54%|█████▍    | 26/48 [01:23<01:10,  3.19s/it]Testing DataLoader 0:  56%|█████▋    | 27/48 [01:26<01:07,  3.19s/it]Testing DataLoader 0:  58%|█████▊    | 28/48 [01:29<01:03,  3.19s/it]Testing DataLoader 0:  60%|██████    | 29/48 [01:32<01:00,  3.18s/it]Testing DataLoader 0:  62%|██████▎   | 30/48 [01:35<00:57,  3.18s/it]Testing DataLoader 0:  65%|██████▍   | 31/48 [01:38<00:54,  3.18s/it]Testing DataLoader 0:  67%|██████▋   | 32/48 [01:41<00:50,  3.18s/it]Testing DataLoader 0:  69%|██████▉   | 33/48 [01:44<00:47,  3.17s/it]Testing DataLoader 0:  71%|███████   | 34/48 [01:47<00:44,  3.17s/it]Testing DataLoader 0:  73%|███████▎  | 35/48 [01:51<00:41,  3.17s/it]Testing DataLoader 0:  75%|███████▌  | 36/48 [01:54<00:38,  3.17s/it]Testing DataLoader 0:  77%|███████▋  | 37/48 [01:57<00:34,  3.17s/it]Testing DataLoader 0:  79%|███████▉  | 38/48 [02:00<00:31,  3.16s/it]Testing DataLoader 0:  81%|████████▏ | 39/48 [02:03<00:28,  3.16s/it]Testing DataLoader 0:  83%|████████▎ | 40/48 [02:06<00:25,  3.16s/it]Testing DataLoader 0:  85%|████████▌ | 41/48 [02:09<00:22,  3.16s/it]Testing DataLoader 0:  88%|████████▊ | 42/48 [02:12<00:18,  3.16s/it]Testing DataLoader 0:  90%|████████▉ | 43/48 [02:15<00:15,  3.16s/it]Testing DataLoader 0:  92%|█████████▏| 44/48 [02:18<00:12,  3.15s/it]Testing DataLoader 0:  94%|█████████▍| 45/48 [02:21<00:09,  3.15s/it]Testing DataLoader 0:  96%|█████████▌| 46/48 [02:24<00:06,  3.15s/it]Testing DataLoader 0:  98%|█████████▊| 47/48 [02:27<00:03,  3.15s/it]Testing DataLoader 0: 100%|██████████| 48/48 [02:30<00:00,  3.13s/it][NanoDet][05-15 17:56:43]INFO:
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.720
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.970
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.861
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.593
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.745
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.742
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.072
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.479
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.764
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.642
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.789
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.779
+
+[NanoDet][05-15 17:56:43]INFO:
+| class   | AP50   | mAP   | class   | AP50   | mAP   |
+|:--------|:-------|:------|:--------|:-------|:------|
+| sheep   | nan    | nan   | sheep   | 97.0   | 72.0  |
+Loading and preparing results...
+DONE (t=0.03s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=1.78s).
+Accumulating evaluation results...
+DONE (t=0.09s).
+Testing DataLoader 0: 100%|██████████| 48/48 [02:32<00:00,  3.18s/it]

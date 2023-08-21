@@ -1,0 +1,156 @@
+[NanoDet][05-24 08:02:39]INFO:Setting up data...
+[NanoDet][05-24 08:02:39]INFO:Creating model...
+loading annotations into memory...
+Done (t=0.12s)
+creating index...
+index created!
+loading annotations into memory...
+Done (t=0.01s)
+creating index...
+index created!
+model size is  1.5x
+init weights...
+Finish initialize NanoDet-Plus Head.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+  | Name      | Type        | Params
+------------------------------------------
+0 | model     | NanoDetPlus | 7.7 M 
+1 | avg_model | NanoDetPlus | 7.7 M 
+------------------------------------------
+15.5 M    Trainable params
+0         Non-trainable params
+15.5 M    Total params
+61.915    Total estimated model params size (MB)
+[NanoDet][05-24 08:02:42]INFO:Weight Averaging is enabled
+/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:236: PossibleUserWarning: The dataloader, train_dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 48 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /opt/conda/conda-bld/pytorch_1666643003845/work/aten/src/ATen/native/TensorShape.cpp:3190.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/opt/conda/conda-bld/pytorch_1666643003845/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [0,0,0], thread: [0,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1666643003845/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [0,0,0], thread: [1,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1666643003845/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [0,0,0], thread: [2,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1666643003845/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [0,0,0], thread: [3,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1666643003845/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [0,0,0], thread: [4,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1666643003845/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [0,0,0], thread: [5,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1666643003845/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [0,0,0], thread: [6,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1666643003845/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [0,0,0], thread: [7,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+/opt/conda/conda-bld/pytorch_1666643003845/work/aten/src/ATen/native/cuda/ScatterGatherKernel.cu:365: operator(): block: [0,0,0], thread: [8,0,0] Assertion `idx_dim >= 0 && idx_dim < index_size && "index out of bounds"` failed.
+Traceback (most recent call last):
+  File "/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 650, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 735, in _fit_impl
+    results = self._run(model, ckpt_path=self.ckpt_path)
+  File "/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1166, in _run
+    results = self._run_stage()
+  File "/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1252, in _run_stage
+    return self._run_train()
+  File "/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1283, in _run_train
+    self.fit_loop.run()
+  File "/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/pytorch_lightning/loops/loop.py", line 200, in run
+    self.advance(*args, **kwargs)
+  File "/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/pytorch_lightning/loops/fit_loop.py", line 271, in advance
+    self._outputs = self.epoch_loop.run(self._data_fetcher)
+  File "/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/pytorch_lightning/loops/loop.py", line 200, in run
+    self.advance(*args, **kwargs)
+  File "/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/pytorch_lightning/loops/epoch/training_epoch_loop.py", line 203, in advance
+    batch_output = self.batch_loop.run(kwargs)
+  File "/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/pytorch_lightning/loops/loop.py", line 200, in run
+    self.advance(*args, **kwargs)
+  File "/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/pytorch_lightning/loops/batch/training_batch_loop.py", line 87, in advance
+    outputs = self.optimizer_loop.run(optimizers, kwargs)
+  File "/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/pytorch_lightning/loops/loop.py", line 200, in run
+    self.advance(*args, **kwargs)
+  File "/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/pytorch_lightning/loops/optimization/optimizer_loop.py", line 201, in advance
+    result = self._run_optimization(kwargs, self._optimizers[self.optim_progress.optimizer_position])
+  File "/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/pytorch_lightning/loops/optimization/optimizer_loop.py", line 248, in _run_optimization
+    self._optimizer_step(optimizer, opt_idx, kwargs.get("batch_idx", 0), closure)
+  File "/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/pytorch_lightning/loops/optimization/optimizer_loop.py", line 358, in _optimizer_step
+    self.trainer._call_lightning_module_hook(
+  File "/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1550, in _call_lightning_module_hook
+    output = fn(*args, **kwargs)
+  File "/cluster/home/mariutor/nanodet/nanodet/trainer/task.py", line 281, in optimizer_step
+    optimizer.step(closure=optimizer_closure)
+  File "/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/pytorch_lightning/core/optimizer.py", line 168, in step
+    step_output = self._strategy.optimizer_step(self._optimizer, self._optimizer_idx, closure, **kwargs)
+  File "/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/pytorch_lightning/strategies/strategy.py", line 216, in optimizer_step
+    return self.precision_plugin.optimizer_step(model, optimizer, opt_idx, closure, **kwargs)
+  File "/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/pytorch_lightning/plugins/precision/precision_plugin.py", line 153, in optimizer_step
+    return optimizer.step(closure=closure, **kwargs)
+  File "/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/torch/optim/lr_scheduler.py", line 68, in wrapper
+    return wrapped(*args, **kwargs)
+  File "/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/torch/optim/optimizer.py", line 140, in wrapper
+    out = func(*args, **kwargs)
+  File "/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/torch/autograd/grad_mode.py", line 27, in decorate_context
+    return func(*args, **kwargs)
+  File "/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/torch/optim/adamw.py", line 120, in step
+    loss = closure()
+  File "/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/pytorch_lightning/plugins/precision/precision_plugin.py", line 138, in _wrap_closure
+    closure_result = closure()
+  File "/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/pytorch_lightning/loops/optimization/optimizer_loop.py", line 146, in __call__
+    self._result = self.closure(*args, **kwargs)
+  File "/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/pytorch_lightning/loops/optimization/optimizer_loop.py", line 132, in closure
+    step_output = self._step_fn()
+  File "/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/pytorch_lightning/loops/optimization/optimizer_loop.py", line 407, in _training_step
+    training_step_output = self.trainer._call_strategy_hook("training_step", *kwargs.values())
+  File "/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1704, in _call_strategy_hook
+    output = fn(*args, **kwargs)
+  File "/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/pytorch_lightning/strategies/strategy.py", line 358, in training_step
+    return self.model.training_step(*args, **kwargs)
+  File "/cluster/home/mariutor/nanodet/nanodet/trainer/task.py", line 78, in training_step
+    preds, loss, loss_states = self.model.forward_train(batch)
+  File "/cluster/home/mariutor/nanodet/nanodet/model/arch/nanodet_plus.py", line 56, in forward_train
+    loss, loss_states = self.head.loss(head_out, gt_meta, aux_preds=aux_head_out)
+  File "/cluster/home/mariutor/nanodet/nanodet/model/head/nanodet_plus_head.py", line 198, in loss
+    batch_assign_res = multi_apply(
+  File "/cluster/home/mariutor/nanodet/nanodet/util/misc.py", line 24, in multi_apply
+    return tuple(map(list, zip(*map_results)))
+  File "/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/torch/autograd/grad_mode.py", line 27, in decorate_context
+    return func(*args, **kwargs)
+  File "/cluster/home/mariutor/nanodet/nanodet/model/head/nanodet_plus_head.py", line 314, in target_assign_single_img
+    assign_result = self.assigner.assign(
+  File "/cluster/home/mariutor/nanodet/nanodet/model/head/assigner/dsl_assigner.py", line 104, in assign
+    matched_pred_ious, matched_gt_inds = self.dynamic_k_matching(
+  File "/cluster/home/mariutor/nanodet/nanodet/model/head/assigner/dsl_assigner.py", line 137, in dynamic_k_matching
+    cost[:, gt_idx], k=dynamic_ks[gt_idx].item(), largest=False
+RuntimeError: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call,so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/cluster/home/mariutor/nanodet/tools/train.py", line 145, in <module>
+    main(args)
+  File "/cluster/home/mariutor/nanodet/tools/train.py", line 140, in main
+    trainer.fit(task, train_dataloader, val_dataloader)
+  File "/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 696, in fit
+    self._call_and_handle_interrupt(
+  File "/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 664, in _call_and_handle_interrupt
+    self._teardown()
+  File "/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1229, in _teardown
+    self.strategy.teardown()
+  File "/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/pytorch_lightning/strategies/strategy.py", line 476, in teardown
+    self.lightning_module.cpu()
+  File "/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/pytorch_lightning/core/mixins/device_dtype_mixin.py", line 141, in cpu
+    return super().cpu()
+  File "/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/torch/nn/modules/module.py", line 796, in cpu
+    return self._apply(lambda t: t.cpu())
+  File "/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/torch/nn/modules/module.py", line 639, in _apply
+    module._apply(fn)
+  File "/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/torch/nn/modules/module.py", line 639, in _apply
+    module._apply(fn)
+  File "/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/torch/nn/modules/module.py", line 639, in _apply
+    module._apply(fn)
+  [Previous line repeated 1 more time]
+  File "/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/torch/nn/modules/module.py", line 662, in _apply
+    param_applied = fn(param)
+  File "/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/torch/nn/modules/module.py", line 796, in <lambda>
+    return self._apply(lambda t: t.cpu())
+RuntimeError: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call,so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.

@@ -1,0 +1,50 @@
+[NanoDet][05-24 11:24:23]INFO:Setting up data...
+[NanoDet][05-24 11:24:23]INFO:Creating model...
+loading annotations into memory...
+Done (t=0.21s)
+creating index...
+index created!
+loading annotations into memory...
+Done (t=0.07s)
+creating index...
+index created!
+model size is  1.5x
+init weights...
+Finish initialize NanoDet-Plus Head.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+  | Name      | Type        | Params
+------------------------------------------
+0 | model     | NanoDetPlus | 7.7 M 
+1 | avg_model | NanoDetPlus | 7.7 M 
+------------------------------------------
+15.5 M    Trainable params
+0         Non-trainable params
+15.5 M    Total params
+61.937    Total estimated model params size (MB)
+[NanoDet][05-24 11:24:28]INFO:Weight Averaging is enabled
+/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:236: PossibleUserWarning: The dataloader, train_dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 28 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /opt/conda/conda-bld/pytorch_1666643003845/work/aten/src/ATen/native/TensorShape.cpp:3190.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+[NanoDet][05-24 11:24:34]INFO:Train|Epoch1/300|Iter0(1/4961)| mem:1.65G| lr:1.00e-07| loss_qfl:0.0058| loss_bbox:0.1384| loss_dfl:0.0391| aux_loss_qfl:0.0080| aux_loss_bbox:0.1720| aux_loss_dfl:0.0483| 
+[NanoDet][05-24 11:24:53]INFO:Train|Epoch1/300|Iter50(51/4961)| mem:1.63G| lr:1.00e-04| loss_qfl:0.0277| loss_bbox:0.0000| loss_dfl:0.0000| aux_loss_qfl:0.8073| aux_loss_bbox:0.0000| aux_loss_dfl:0.0000| 
+[NanoDet][05-24 11:25:09]INFO:Train|Epoch1/300|Iter100(101/4961)| mem:1.63G| lr:2.00e-04| loss_qfl:0.0558| loss_bbox:0.0000| loss_dfl:0.0000| aux_loss_qfl:0.0600| aux_loss_bbox:0.0000| aux_loss_dfl:0.0000| 
+[NanoDet][05-24 11:25:26]INFO:Train|Epoch1/300|Iter150(151/4961)| mem:1.63G| lr:3.00e-04| loss_qfl:0.2088| loss_bbox:0.7110| loss_dfl:0.2099| aux_loss_qfl:0.3187| aux_loss_bbox:0.3761| aux_loss_dfl:0.0949| 
+[NanoDet][05-24 11:25:42]INFO:Train|Epoch1/300|Iter200(201/4961)| mem:1.64G| lr:4.00e-04| loss_qfl:0.0558| loss_bbox:0.0000| loss_dfl:0.0000| aux_loss_qfl:0.0040| aux_loss_bbox:0.0000| aux_loss_dfl:0.0000| 
+[NanoDet][05-24 11:25:58]INFO:Train|Epoch1/300|Iter250(251/4961)| mem:1.64G| lr:5.00e-04| loss_qfl:0.2472| loss_bbox:0.8252| loss_dfl:0.2379| aux_loss_qfl:0.4059| aux_loss_bbox:0.2821| aux_loss_dfl:0.0748| 
+[NanoDet][05-24 11:26:14]INFO:Train|Epoch1/300|Iter300(301/4961)| mem:1.64G| lr:6.00e-04| loss_qfl:0.6439| loss_bbox:0.2181| loss_dfl:0.0744| aux_loss_qfl:0.7025| aux_loss_bbox:0.1269| aux_loss_dfl:0.0410| 
+[NanoDet][05-24 11:26:29]INFO:Train|Epoch1/300|Iter350(351/4961)| mem:1.64G| lr:7.00e-04| loss_qfl:0.3094| loss_bbox:0.6922| loss_dfl:0.1853| aux_loss_qfl:0.5419| aux_loss_bbox:0.1840| aux_loss_dfl:0.0475| 
+[NanoDet][05-24 11:26:45]INFO:Train|Epoch1/300|Iter400(401/4961)| mem:1.64G| lr:8.00e-04| loss_qfl:0.0418| loss_bbox:0.0000| loss_dfl:0.0000| aux_loss_qfl:0.0376| aux_loss_bbox:0.0000| aux_loss_dfl:0.0000| 
+[NanoDet][05-24 11:27:02]INFO:Train|Epoch1/300|Iter450(451/4961)| mem:1.64G| lr:9.00e-04| loss_qfl:0.2628| loss_bbox:0.1767| loss_dfl:0.0511| aux_loss_qfl:0.2539| aux_loss_bbox:0.1799| aux_loss_dfl:0.0544| 
+[NanoDet][05-24 11:27:18]INFO:Train|Epoch1/300|Iter500(501/4961)| mem:1.64G| lr:1.00e-03| loss_qfl:0.0596| loss_bbox:0.4538| loss_dfl:0.0992| aux_loss_qfl:0.0713| aux_loss_bbox:0.2453| aux_loss_dfl:0.0686| 
+[NanoDet][05-24 11:27:35]INFO:Train|Epoch1/300|Iter550(551/4961)| mem:1.64G| lr:1.00e-03| loss_qfl:0.0460| loss_bbox:0.1048| loss_dfl:0.0197| aux_loss_qfl:0.0437| aux_loss_bbox:0.0439| aux_loss_dfl:0.0094| 
+[NanoDet][05-24 11:27:53]INFO:Train|Epoch1/300|Iter600(601/4961)| mem:1.64G| lr:1.00e-03| loss_qfl:0.3906| loss_bbox:1.1662| loss_dfl:0.3463| aux_loss_qfl:0.3962| aux_loss_bbox:1.1392| aux_loss_dfl:0.3313| 
+[NanoDet][05-24 11:28:10]INFO:Train|Epoch1/300|Iter650(651/4961)| mem:1.64G| lr:1.00e-03| loss_qfl:0.2603| loss_bbox:0.1977| loss_dfl:0.0584| aux_loss_qfl:0.4568| aux_loss_bbox:0.0517| aux_loss_dfl:0.0143| 
+[NanoDet][05-24 11:28:26]INFO:Train|Epoch1/300|Iter700(701/4961)| mem:1.64G| lr:1.00e-03| loss_qfl:0.1974| loss_bbox:0.4405| loss_dfl:0.0930| aux_loss_qfl:0.2038| aux_loss_bbox:0.3061| aux_loss_dfl:0.0704| 
+[NanoDet][05-24 11:28:43]INFO:Train|Epoch1/300|Iter750(751/4961)| mem:1.64G| lr:1.00e-03| loss_qfl:0.1474| loss_bbox:1.1516| loss_dfl:0.3168| aux_loss_qfl:0.2673| aux_loss_bbox:0.5360| aux_loss_dfl:0.1485| 
+slurmstepd: error: *** JOB 18397239 ON idun-05-12 CANCELLED AT 2023-05-24T11:28:54 ***

@@ -1,0 +1,33 @@
+[NanoDet][05-24 08:03:16]INFO:Setting up data...
+[NanoDet][05-24 08:03:16]INFO:Creating model...
+loading annotations into memory...
+Done (t=0.13s)
+creating index...
+index created!
+loading annotations into memory...
+Done (t=0.02s)
+creating index...
+index created!
+model size is  1.5x
+init weights...
+Finish initialize NanoDet-Plus Head.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+  | Name      | Type        | Params
+------------------------------------------
+0 | model     | NanoDetPlus | 7.7 M 
+1 | avg_model | NanoDetPlus | 7.7 M 
+------------------------------------------
+15.5 M    Trainable params
+0         Non-trainable params
+15.5 M    Total params
+61.915    Total estimated model params size (MB)
+[NanoDet][05-24 08:03:19]INFO:Weight Averaging is enabled
+/cluster/home/mariutor/.conda/envs/nanodet/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:236: PossibleUserWarning: The dataloader, train_dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 48 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+/var/slurm_spool/job18323791/slurm_script: line 13: 1162525 Killed                  python tools/train.py $1
+slurmstepd: error: Detected 1 oom_kill event in StepId=18323791.batch. Some of the step tasks have been OOM Killed.

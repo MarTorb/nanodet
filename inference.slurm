@@ -13,4 +13,4 @@ source ~/.bashrc
 
 conda activate nanodet
 
-python demo/demo.py image --config config/$1_$2.yml --model workspace/$1_$2/model_best/nanodet_model_best.pth --path $1/test/ --save_result
+python demo/demo.py image --config config/test/$1_$2.yml --model workspace/$1_$2/model_best/nanodet_model_best.pth --path $1/test/ --save_result

@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/cluster/home/mariutor/nanodet/tools/train.py", line 145, in <module>
+    main(args)
+  File "/cluster/home/mariutor/nanodet/tools/train.py", line 52, in main
+    raise ValueError(
+ValueError: cfg.model.arch.head.num_classes must equal len(cfg.class_names), but got 2 and 1

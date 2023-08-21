@@ -107,6 +107,7 @@ class CocoDetectionEvaluator:
         per_class_ap50s = []
         per_class_maps = []
         precisions = coco_eval.eval["precision"]
+        recall = coco_eval.eval["recall"]
         # dimension of precisions: [TxRxKxAxM]
         # precision has dims (iou, recall, cls, area range, max dets)
         assert len(self.class_names) == precisions.shape[2]
